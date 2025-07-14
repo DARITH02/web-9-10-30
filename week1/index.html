@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <swiper-container
+      class="mySwiper"
+      pagination="true"
+      pagination-clickable="true"
+      navigation="true"
+      space-between="30"
+      centered-slides="true"
+      autoplay-delay="2500"
+      autoplay-disable-on-interaction="false"
+    >
+      <swiper-slide>
+        <img
+          style="width: 100%; height: 100%"
+          src="https://i.pinimg.com/736x/c0/23/e3/c023e3e316de791d426572d53067a9ec.jpg"
+          alt=""
+        />
+      </swiper-slide>
+      <swiper-slide>
+        <img
+          src="https://i.pinimg.com/736x/c0/73/d1/c073d116f27a7d1d551cab777f2ef722.jpg"
+          alt=""
+        />
+      </swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
